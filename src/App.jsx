@@ -1,7 +1,15 @@
-import React from "react";
+import React from 'react'
 
 const App = () => {
-  return <div>Basic Pursuit React Starter</div>;
-};
+  const { theme, setTheme } = useTheme()
+  return (
+    <div>
+      <h1>Theme Context</h1>
+      <button style={{ width: '100px', height: '50px' }}>
+        Change Background
+      </button>
+    </div>
+  )
+}
 
-export default App;
+export default App
